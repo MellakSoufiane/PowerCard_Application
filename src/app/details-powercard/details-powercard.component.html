@@ -1,0 +1,203 @@
+<div class='form'> 
+<div class="parent">
+         
+    <div class="div1"> 
+      <h1>Identification :</h1>
+      <div class="separation"></div>
+    </div>
+
+    <div class="div2"> 
+
+      <label for="id">Application ID </label>
+      <input type="text" class="form-control" id="id" required [(ngModel)]="powercard.id" name="id" disabled>
+    
+      <label for="type">Application Type :</label>
+      <input type="text" class="form-control" id="basic_card"  value={{powercard.type}} name="basic_card" disabled>
+
+      <label for="type">Current Product :</label>
+      <input type="text" class="form-control" id="basic_card"  value={{powercard.card.card_product_code}} name="basic_card" disabled>
+
+
+      <label for="id">Card Number </label>
+      <input type="text" class="form-control" id="powercard.card.id" value={{powercard.card.id}} name="powercard.card.id" disabled>
+      
+      <label for="id">Basic Card Number </label>
+      <input type="text" class="form-control" id="basic_card" value={{powercard.card.id}} name="basic_card" disabled>
+
+
+    </div>
+
+    <div class="div3">
+
+      <label for="type">Bank :</label>
+      
+
+      <label for="id">Client Code </label>
+      <input type="text" class="form-control" id="id" value={{powercard.client.id}} name="basic_card" disabled >
+
+      <label for="id">Credit Profile </label>
+      <input type="text" class="form-control" id="id"  name="id" disabled>
+
+      <label for="type">Branch :</label>
+      <input type="text" class="form-control" id="id" value={{powercard.card.branch}} name="branch" disabled >
+
+
+      <label for="id">Account Number </label>
+      <input type="text" class="form-control" id="id" value={{powercard.card.shadowaccount.id}} name="id" disabled>
+
+
+    </div>
+
+
+
+    <div class="div4">
+      <h2>CARD INFO :</h2>
+      <div class="separation"></div>        
+    </div>
+
+    <div class="div5">
+      <h3>Name</h3>
+
+      <label for="type">Gender </label>
+      <input type="text" class="form-control" id="id" value={{powercard.client.gender}} name="id" disabled>
+
+      <label for="type">Family Status </label>
+            <input type="text" class="form-control" id="id" value={{powercard.client.family_status}} disabled>
+
+            <label for="id">First Name </label>
+            <input type="text" class="form-control" id="id"value={{powercard.client.first_name}} disabled>
+
+            <label for="id">Family Name </label>
+            <input type="text" class="form-control" id="id"value={{powercard.client.family_status}} disabled>
+
+            <label for="type">Title </label>
+            <input type="text" class="form-control" id="id"value={{powercard.client.title}} disabled>
+
+            <label for="id">Maiden Name </label>
+            <input type="text" class="form-control" id="id"value={{powercard.client.maiden_name}} disabled>
+
+
+          </div>
+
+          <div class="div6"> 
+            <h3>Personal Information</h3> 
+
+           
+          
+            <label for="type">VIP Level: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.client.vip}} disabled>
+
+            <label for="type">Language code: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.client.language_code}} disabled>
+
+            <label for="type">Nationality : </label>
+            <input type="text" class="form-control" id="id" value={{powercard.client.nationality}} disabled>
+
+            <label for="birthday">Birthday:</label>
+            <input type="text" class="form-control" id="id" value={{powercard.client.date_birth}} disabled>
+          
+          </div>
+          
+          <div class="div7">
+            <h2>ACCOUNT INFO :</h2>
+            <div class="separation"></div>   
+          </div>
+
+          <div class="div8">
+            <h3>Shadow Account</h3>
+            
+            <label for="id">Credit Limit: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.shadowaccount.credit_limit}} disabled>
+             
+          
+            <label for="id">Cash Limit: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.shadowaccount.cash_limit}} disabled>
+        
+            
+            
+            <label for="id">Loan Limit: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.shadowaccount.loan_limit}} disabled>
+            
+          </div>
+
+          <div class="div9">
+            <h3>Billing Account</h3>
+            <label for="id">Debit Account Number: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.billingaccount.Debit_number}} disabled>
+
+            <label for="id">Debit Account Curency:</label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.billingaccount.Debit_curency}} disabled>
+
+            <label for="id">Debit Account Bank code </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.billingaccount.Debit_code}} disabled>
+
+
+          </div>
+
+          <div class="div10"> 
+            <h3>Corporate</h3>
+            <label for="id">Corporate ID: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.corporate.id}} disabled>
+
+            <label for="id">Corporate Account: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.corporate.corporate_account}} disabled>
+
+            <label for="id">Corporate Name: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.card.corporate.corporate_name}} disabled>
+
+
+          </div>
+
+
+
+
+
+          <div class="div11">
+            <h2>ADDRESSES :</h2>
+            <div class="separation"></div> 
+          </div>
+          
+          <div class="div12">
+
+           
+
+            <label for="text">Line 1 :</label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.line1}} disabled>
+
+            <label for="text">Country : </label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.country}} disabled>
+            
+             <label for="id">Zip Code : </label>
+             <input type="text" class="form-control" id="id" value={{powercard.adress.zip_code}} disabled>
+
+             <label for="id">State/Province : </label>
+             <input type="text" class="form-control" id="id" value={{powercard.adress.state}} disabled>
+
+             <label for="id">City : </label>
+             <input type="text" class="form-control" id="id" value={{powercard.adress.city}} disabled>
+            
+          </div>
+          <div class="div13">
+
+            <label for="id">Type Adress: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.type}} disabled>
+
+            <label for="id">Sending Mode: </label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.send_mode}} disabled>
+
+            <label for="id">Phone Type : </label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.phone_type}} disabled>
+
+            <label for="id">Phone : </label>
+            <input type="text" class="form-control" id="id" value={{powercard.adress.phone}} disabled>
+
+
+          </div>
+          
+          <div class="div14"> <span>All Rights Reserved 2021 @MellakSoufiane</span></div>
+          
+          </div>
+           
+        </div>
+
+      

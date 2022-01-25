@@ -1,0 +1,31 @@
+<h2> PowerCard List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> ID</th>
+            <th> Type </th>
+           
+            <th> More Information </th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let powercard of powercards | async">
+            <td>{{powercard.id}}</td>
+            <td>{{powercard.type}}</td>
+            
+            
+            <td>
+                <button  (click)="powercardDetails(powercard.id)" class="btn btn-info mr-1">Details</button>
+               
+                <button (click)="deletePowerCard(powercard.id)"  class="btn btn-danger mr-1">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<footer class = "footer">
+  
+    <div class="div13"> <span>All Rights Reserved 2021 @MellakSoufiane</span></div>
+
+  
+</footer>
